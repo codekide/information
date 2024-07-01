@@ -1,0 +1,141 @@
+Table Cells
+แต่ละเซลล์ของตารางถูกกำหนดโดย <td> จะปิดด้วย </td>
+----------------------------------------------------------
+Table Rows
+แต่ละแถวของตารางเริ่มต้นด้วย a <tr> และลงท้ายด้วย </tr>
+----------------------------------------------------------
+Table Headers
+การให้เซลล์ของคุณเป็นเซลล์ส่วนหัวของตาราง <th> แทน <td>
+----------------------------------------------------------
+HTML Table
+Tag	Description
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table
+----------------------------------------------------------
+HTML Table Width
+การกำหนดความกว้างของตารางให้เพิ่ม style ให้กับ <table>
+<table style="width:100%"></table>
+----------------------------------------------------------
+HTML Table Column Width
+การกำหนดขนาดของคอลัมน์โดยเฉพาะ ให้เพิ่ม style  <th> หรือ <td>:
+----------------------------------------------------------
+HTML Table Row Height
+การกำหนดความสูงของแถวใดแถวหนึ่ง ให้เพิ่ม style
+<table style="height:100%">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Age</th>
+    </tr>
+</table>
+----------------------------------------------------------
+HTML Table Headers
+Table headers are defined with <th> elements. Each <th> element represents a table cell.
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+----------------------------------------------------------
+Vertical Table Headers
+To use the first column as table headers, define the first cell in each row as a <th> element:
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <td>Jill</td>
+          <td>Eve</td>
+        </tr>
+      </table>
+---------------------------------------------------------
+Header for Multiple Columns
+To do this, use the colspan attribute on the <th> element:
+<table>
+    <tr>
+          <th colspan="2">Name</th>
+          <th>Age</th>
+    </tr>
+    <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+  </tr>
+    <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+    </tr>
+</table>
+---------------------------------------------------------
+Table Caption
+To add a caption to a table, use the <caption> tag:
+    <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+    </table>
+---------------------------------------------------------
+HTML Table - Colspan
+To make a cell span over multiple columns, use the colspan attribute:
+<table>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+</table>
+----------------------------------------------------------
+HTML Table - Rowspan
+To make a cell span over multiple rows, use the rowspan attribute:
+<tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+</tr>
+----------------------------------------------------------
+HTML Table Colgroup
+
+The <colgroup> element should be used as a container for the column specifications.
+Each group is specified with a <col> element.
+The <span> attribute specifies how many columns that get the style.
+The <style> attribute specifies the style to give the columns.
+
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+</table>
+
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
+<div> กรอบรอบข้อความ
